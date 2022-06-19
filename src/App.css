@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  margin: 0 auto;
 }
+.header{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  background-color: rgb(42, 42, 231);
+  padding: .6em;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header > img{
+  width: 3%;
+  height: 3%;
+  margin-left: 20px;
+}
+.search{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.input-search{
+  width:60%
+}
+.cards{
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.cards-item{
+  text-align: center;
+  margin: 5px;
+  width: 50%;
+  border: 1px solid grey;
+  padding: 2px;
+  background-color: rgb(248, 248, 248);
+  text-decoration: none;
+  color:black
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-img{
+  width:200px;
+  height:200px
 }
